@@ -1,0 +1,155 @@
+
+/* Style features for navigation bar  */
+
+*{
+    font-family: cursive;
+}
+
+/* Style for CSS Library btn from Button Up */
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(159, 184, 221);
+    color: black; 
+    align-items: center;
+    padding: 10px; 
+}
+
+h1 {
+    color: white;
+    margin: 50px;
+}
+
+.btnCity {
+    color: white;
+    font-size: 20px;
+    background-color: rgb(159, 184, 221);
+    margin: 50px;
+    border: 3px rgb(159, 184, 221);
+}
+
+.topContainer{
+    /*border: 3px solid black;  Used this for control of box model*/
+    border-bottom: 2px solid black;
+    width: 99%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left:  0px;
+    top: 10px;
+}
+
+.mainContainer{
+    /*border: 3px solid black; Used this for control of box model*/
+    width: 800px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left:  350px;
+    top: 70px;
+}
+
+
+.centerContainer{
+    /*border: 3px solid black; Used this for control of box model*/
+    width: 99%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left:  0px;
+    top: 120px;
+}
+
+.day{
+    /*border: 3px solid black; Used this for control of box model*/
+    width: 22%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+    margin-top: 30px;
+    /*position: absolute;
+    left:  0px;
+    top: 10px;*/
+}
+
+.imageDay {
+    border: 15px solid white;
+    border-radius: 100px;
+    display: flex;
+}
+
+.temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.minimum {
+    margin: 5px;
+    padding-bottom: 5px;
+    color: blue;
+}
+
+.maximum {
+    margin: 5px;
+    padding-bottom: 5px;
+    color: red;
+}
+
+
+.cookiesContainer {
+    border: 3px solid black;
+    width: 786px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left:  350px;
+    top: 460px;
+    background-color: rgb(228, 228, 228);
+}
+
+.paragraphCookies {
+    margin-block-start: 2px;
+    margin-block-end: 2px;
+}
+
+/*.btnAccept {
+    color: red;
+    background-color: rgb(71, 112, 173);
+    margin: 50px;
+    border: 3px rgb(159, 184, 221);
+}*/
+
+.btnAccept {
+    background-color: rgb(132, 177, 235);
+    color: black;
+    font-size: 15px;
+    border: 4px solid black;
+    box-shadow: 5px 2px 2px black;
+    margin-left: 0px;
+}
+
+.link {
+    text-decoration: underline;
+    color: rgb(77, 163, 233);
+}
+

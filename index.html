@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css" />
+        <title>Weather Forecast</title>
+	</head>	
+	<body>
+		<div class="navBar">
+            <h1 class="nav-title">DojoWeather</h1>
+			<button type="submit" class="btnCity" onclick="displayMessage(this)">  <!--Using onclick attribute-->
+				Burbank
+			</button>
+			<button type="submit" class="btnCity" onclick="displayMessage(this)">
+				Chicago
+			</button>
+			<button type="submit" class="btnCity" onclick="displayMessage(this)">
+				Dallas
+			</button>
+        </div>  
+		<div class="mainContainer"> <!--Here starts code for main container-->
+			<div class="topContainer">
+				<div class="leftSide">
+                	<h2 class="title">San Jose</h2>
+				</div>
+				<div class="rightSide">
+                	<label for="degrees">show temperature in</label>
+					<select name="degrees" id="degrees" onchange="detectDegrees(this)"> <!--Using onchange attribute-->
+						<option value="C">
+							°C
+						</option>
+						<option value="F">
+							°F
+						</option>
+					</select>
+				</div>
+            </div>
+			<div class="centerContainer">
+				<div class="day">
+					<h3 class="dayTitle">Today</h3>
+					<div class="imageDay">
+						<img alt="Image weather Day" src="./images/some_rain.png" width="75"/>
+					</div>
+					<div class="descritionDay">
+						some rain
+					</div>
+					<div class="temperature">
+						<div class="maximum">
+							<span class="spanMax">24</span><span>°</span>
+						</div>
+						<div class="minimum">
+							<span class="spanMin">18</span><span>°</span>
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<h3 class="dayTitle">Tomorrow</h3>
+					<div class="imageDay">
+						<img alt="Image weather Day" src="./images/some_sun.png" width="75"/>
+						
+					</div>
+					<div class="descritionDay">
+						some sun
+					</div>
+					<div class="temperature">
+						<div class="maximum">
+							<span class="spanMax">27</span><span>°</span>
+						</div>
+						<div class="minimum">
+							<span class="spanMin">19</span><span>°</span>
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<h3 class="dayTitle">Friday</h3>
+					<div class="imageDay">
+						<img alt="Image weather Day " src="./images/some_clouds.png" width="75"/>
+						
+					</div>
+					<div class="descritionDay">
+						some clouds
+					</div>
+					<div class="temperature">
+						<div class="maximum">
+							<span class="spanMax">21</span><span>°</span>
+						</div>
+						<div class="minimum">
+							<span class="spanMin">16</span><span>°</span>
+						</div>
+					</div>
+				</div>
+				<div class="day">
+					<h3 class="dayTitle">Saturday</h3>
+					<div class="imageDay">
+						<img alt="Image weather Day " src="./images/some_sun.png" width="75"/>
+						
+					</div>
+					<div class="descritionDay4">
+						some sun
+					</div>
+					<div class="temperature">
+						<div class="maximum">
+							<span class="spanMax">26</span><span>°</span>
+						</div>
+						<div class="minimum">
+							<span class="spanMin">21</span><span>°</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+		<div class="cookiesContainer"><!--Here start code for second container-->
+			<div>
+				<img alt="cookies image here" src="./images/cookie.png" width="50"/>
+				
+			</div>
+			<div>
+				<h4>
+					Stop! Cookie Time
+				</h4>
+				<p class="paragraphCookies">
+					We use cookies (sadly not the edible ones) to personalize
+				</p>
+				<p class="paragraphCookies">
+					content and ads, to provide social media feactures and to 
+				</p>
+				<p class="paragraphCookies">
+					analyse our traffic. <span class="link">Read more...</span>
+				</p>
+			</div>
+			<div>
+				<button type="submit" class="btnAccept" > <!--target with addEvenListener click -->
+				I Accept
+				</button>
+			</div>
+		</div>
+		<script src="./js/index.js"> </script>
+    </body>
+</html>
